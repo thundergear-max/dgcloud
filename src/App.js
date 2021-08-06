@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import ProgressBar from "./comps/ProgressBar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { auth, projectFirestore } from "./firebase/config";
-import { saveAs } from "file-saver";
+
 import urls from "./hooks/useStorage";
 
 const StyledApp = styled.div`
