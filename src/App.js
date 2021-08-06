@@ -20,6 +20,7 @@ function App() {
   const [selectedImg, setSelectedImg] = useState(null);
   const [theme, setTheme] = useState("light");
   const [user, setUser] = useState(null);
+  console.log(urls)
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       const user = {
