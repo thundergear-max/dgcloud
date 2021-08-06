@@ -127,6 +127,7 @@ function ImageGrid({ setSelectedImg }) {
                 />
               </a>
             </motion.div>
+<a href={urls} download>
             <button
               style={{
                 backgroundColor: "blue",
@@ -137,12 +138,10 @@ function ImageGrid({ setSelectedImg }) {
                 height: 30,
                 marginTop: 10,
               }}
-              onClick={(e) => {
-                saveAs(`${urls}`, "image.jpg");
-              }}
+          
             >
               <i class="fas fa-download"></i>
-            </button>
+            </button></a>
             <button
               style={{
                 backgroundColor: "red",
