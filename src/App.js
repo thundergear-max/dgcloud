@@ -127,7 +127,7 @@ function ImageGrid({ setSelectedImg }) {
                 />
               </a>
             </motion.div>
-<a href={urls} target='_blank' download="MyExampleDoc">
+<a href={urls}  download>
             <button
               style={{
                 backgroundColor: "blue",
