@@ -11,7 +11,6 @@ import ProgressBar from "./comps/ProgressBar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { auth, projectFirestore } from "./firebase/config";
 
-import urls from "./hooks/useStorage";
 
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -20,7 +19,6 @@ function App() {
   const [selectedImg, setSelectedImg] = useState(null);
   const [theme, setTheme] = useState("light");
   const [user, setUser] = useState(null);
-  console.log(urls)
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       const user = {
@@ -128,7 +126,7 @@ function ImageGrid({ setSelectedImg }) {
                 />
               </a>
             </motion.div>
-<a href={urls}  download>
+<a href={doc.url}  download>
             <button
               style={{
                 backgroundColor: "blue",
